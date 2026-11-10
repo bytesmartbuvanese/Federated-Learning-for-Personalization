@@ -1,0 +1,4 @@
+program_id,department_id,program_name,education_level,duration_years
+778a71dc-07b1-48fc-91b2-df58a8d44482,8cf619dc-fff7-4f89-aa2c-3f57b36562ce,B.Tech Computer Science,Undergraduate,4
+90c8a834-cb45-4331-adac-b36ff0b11649,29a1826b-473a-4aab-bf20-43387a9d4124,B.Sc Mathematics,Undergraduate,3
+5b02dfde-c9dc-40b0-a83f-424b9710d757,fb8d8c08-f408-447e-90f2-c4813ab841cb,MBA,Postgraduate,2

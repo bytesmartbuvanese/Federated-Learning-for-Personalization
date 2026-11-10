@@ -1,0 +1,21 @@
+{
+  "features": [
+    "current_year",
+    "education_level_code",
+    "course_credit_hours",
+    "course_difficulty_code",
+    "term_year",
+    "prior_courses_count",
+    "prior_success_rate",
+    "prior_mean_percentage",
+    "prior_mean_attendance",
+    "assessment_count",
+    "assessment_mean_percentage",
+    "assessment_submission_rate",
+    "topic_count",
+    "topic_mean_accuracy",
+    "topic_min_accuracy",
+    "topic_total_attempts",
+    "topic_mean_response_time"
+  ]
+}

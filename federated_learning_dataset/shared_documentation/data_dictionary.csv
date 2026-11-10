@@ -1,0 +1,150 @@
+table_name,column_name,data_type,nullable,key_role,description
+institutions,institution_id,UUID,False,PRIMARY KEY,Identifier of the institution owning the record.
+institutions,institution_name,VARCHAR,False,,Institution name value used by the institutions table.
+institutions,institution_type,VARCHAR,False,,Institution type value used by the institutions table.
+institutions,country,VARCHAR,False,,Country value used by the institutions table.
+institutions,created_at,TIMESTAMP,False,,Created at value used by the institutions table.
+institutions,is_active,BOOLEAN,False,,Is active value used by the institutions table.
+departments,department_id,UUID,False,PRIMARY KEY,Department that owns the program or course.
+departments,institution_id,UUID,False,FOREIGN KEY -> institutions.institution_id,Identifier of the institution owning the record.
+departments,department_name,VARCHAR,False,,Department name value used by the departments table.
+programs,program_id,UUID,False,PRIMARY KEY,Program in which the student is enrolled.
+programs,department_id,UUID,False,FOREIGN KEY -> departments.department_id,Department that owns the program or course.
+programs,program_name,VARCHAR,False,,Program name value used by the programs table.
+programs,education_level,VARCHAR,False,,Education level value used by the programs table.
+programs,duration_years,INTEGER,False,,Duration years value used by the programs table.
+academic_terms,term_id,UUID,False,PRIMARY KEY,Academic term associated with the record.
+academic_terms,institution_id,UUID,False,FOREIGN KEY -> institutions.institution_id,Identifier of the institution owning the record.
+academic_terms,term_name,VARCHAR,False,,Term name value used by the academic_terms table.
+academic_terms,academic_year,VARCHAR,False,,Academic year value used by the academic_terms table.
+academic_terms,start_date,DATE,False,,Start date value used by the academic_terms table.
+academic_terms,end_date,DATE,False,,End date value used by the academic_terms table.
+students,student_id,UUID,False,PRIMARY KEY,Pseudonymous identifier of the student.
+students,institution_id,UUID,False,FOREIGN KEY -> institutions.institution_id,Identifier of the institution owning the record.
+students,program_id,UUID,False,FOREIGN KEY -> programs.program_id,Program in which the student is enrolled.
+students,student_reference,VARCHAR,False,,Student reference value used by the students table.
+students,enrollment_date,DATE,False,,Date on which the student or course enrollment became effective.
+students,education_level,VARCHAR,False,,Education level value used by the students table.
+students,current_year,INTEGER,False,,Current year value used by the students table.
+students,preferred_language,VARCHAR,False,,Preferred language value used by the students table.
+students,created_at,TIMESTAMP,False,,Created at value used by the students table.
+student_enrollments,enrollment_id,UUID,False,PRIMARY KEY,Enrollment id value used by the student_enrollments table.
+student_enrollments,student_id,UUID,False,FOREIGN KEY -> students.student_id,Pseudonymous identifier of the student.
+student_enrollments,course_id,UUID,False,FOREIGN KEY -> courses.course_id,Identifier of the course in the institutional catalog.
+student_enrollments,term_id,UUID,False,FOREIGN KEY -> academic_terms.term_id,Academic term associated with the record.
+student_enrollments,enrollment_date,DATE,False,,Date on which the student or course enrollment became effective.
+student_enrollments,enrollment_status,VARCHAR,False,,"Course enrollment state: Active, Completed, or Withdrawn."
+courses,course_id,UUID,False,PRIMARY KEY,Identifier of the course in the institutional catalog.
+courses,institution_id,UUID,False,FOREIGN KEY -> institutions.institution_id,Identifier of the institution owning the record.
+courses,department_id,UUID,False,FOREIGN KEY -> departments.department_id,Department that owns the program or course.
+courses,course_code,VARCHAR,False,,Course code value used by the courses table.
+courses,course_name,VARCHAR,False,,Course name value used by the courses table.
+courses,subject_area,VARCHAR,False,,Subject area value used by the courses table.
+courses,credit_hours,DECIMAL,False,,Credit hours value used by the courses table.
+courses,difficulty_level,VARCHAR,False,,Difficulty level value used by the courses table.
+course_topics,topic_id,UUID,False,PRIMARY KEY,Course topic associated with the record.
+course_topics,course_id,UUID,False,FOREIGN KEY -> courses.course_id,Identifier of the course in the institutional catalog.
+course_topics,parent_topic_id,UUID,True,FOREIGN KEY -> course_topics.topic_id (self-reference),Parent topic identifier; NULL for a root topic.
+course_topics,topic_name,VARCHAR,False,,Topic name value used by the course_topics table.
+course_topics,topic_description,TEXT,False,,Topic description value used by the course_topics table.
+course_topics,sequence_number,INTEGER,False,,Sequence number value used by the course_topics table.
+assessments,assessment_id,UUID,False,PRIMARY KEY,Identifier of the assessment associated with the result.
+assessments,course_id,UUID,False,FOREIGN KEY -> courses.course_id,Identifier of the course in the institutional catalog.
+assessments,term_id,UUID,False,FOREIGN KEY -> academic_terms.term_id,Academic term associated with the record.
+assessments,assessment_name,VARCHAR,False,,Assessment name value used by the assessments table.
+assessments,assessment_type,VARCHAR,False,,Assessment type value used by the assessments table.
+assessments,max_marks,DECIMAL,False,,Max marks value used by the assessments table.
+assessments,assessment_date,DATE,False,,Assessment date value used by the assessments table.
+assessments,topic_id,UUID,True,FOREIGN KEY -> course_topics.topic_id,Course topic associated with the record.
+student_assessment_results,result_id,UUID,False,PRIMARY KEY,Result id value used by the student_assessment_results table.
+student_assessment_results,student_id,UUID,False,FOREIGN KEY -> students.student_id,Pseudonymous identifier of the student.
+student_assessment_results,assessment_id,UUID,False,FOREIGN KEY -> assessments.assessment_id,Identifier of the assessment associated with the result.
+student_assessment_results,marks_obtained,DECIMAL,True,,Marks earned for an assessment; NULL when submission is Missing.
+student_assessment_results,percentage,DECIMAL,False,,Assessment percentage calculated from marks_obtained and max_marks.
+student_assessment_results,submission_status,VARCHAR,False,,Assessment submission state: Submitted or Missing.
+student_assessment_results,submission_date,TIMESTAMP,True,,Submission date value used by the student_assessment_results table.
+student_course_history,history_id,UUID,False,PRIMARY KEY,History id value used by the student_course_history table.
+student_course_history,student_id,UUID,False,FOREIGN KEY -> students.student_id,Pseudonymous identifier of the student.
+student_course_history,course_id,UUID,False,FOREIGN KEY -> courses.course_id,Identifier of the course in the institutional catalog.
+student_course_history,term_id,UUID,False,FOREIGN KEY -> academic_terms.term_id,Academic term associated with the record.
+student_course_history,final_percentage,DECIMAL,False,,"Final synthetic course percentage, from 0 to 100."
+student_course_history,final_grade,VARCHAR,False,,Letter grade derived from final percentage.
+student_course_history,gpa_points,DECIMAL,False,,Synthetic GPA points derived from the agreed grading scale.
+student_course_history,attendance_percentage,DECIMAL,False,,Attendance percentage observed for the course.
+student_course_history,completion_status,VARCHAR,False,,Completion status value used by the student_course_history table.
+student_course_history,completion_date,DATE,True,,Completion date value used by the student_course_history table.
+learning_sessions,session_id,UUID,False,PRIMARY KEY,Identifier of the learning session containing the activity.
+learning_sessions,student_id,UUID,False,FOREIGN KEY -> students.student_id,Pseudonymous identifier of the student.
+learning_sessions,course_id,UUID,False,FOREIGN KEY -> courses.course_id,Identifier of the course in the institutional catalog.
+learning_sessions,session_start,TIMESTAMP,False,,Session start value used by the learning_sessions table.
+learning_sessions,session_end,TIMESTAMP,False,,Session end value used by the learning_sessions table.
+learning_sessions,duration_minutes,DECIMAL,False,,"Elapsed session duration in minutes, calculated from session timestamps."
+learning_sessions,device_type,VARCHAR,False,,Device type value used by the learning_sessions table.
+learning_activity_logs,activity_id,UUID,False,PRIMARY KEY,Activity id value used by the learning_activity_logs table.
+learning_activity_logs,session_id,UUID,False,FOREIGN KEY -> learning_sessions.session_id,Identifier of the learning session containing the activity.
+learning_activity_logs,student_id,UUID,False,FOREIGN KEY -> students.student_id,Pseudonymous identifier of the student.
+learning_activity_logs,course_id,UUID,False,FOREIGN KEY -> courses.course_id,Identifier of the course in the institutional catalog.
+learning_activity_logs,topic_id,UUID,False,FOREIGN KEY -> course_topics.topic_id,Course topic associated with the record.
+learning_activity_logs,activity_type,VARCHAR,False,,Activity type value used by the learning_activity_logs table.
+learning_activity_logs,activity_timestamp,TIMESTAMP,False,,Activity timestamp value used by the learning_activity_logs table.
+learning_activity_logs,time_spent_seconds,INTEGER,False,,"Time spent on the associated learning activity or resource, in seconds."
+learning_activity_logs,completion_status,VARCHAR,False,,Completion status value used by the learning_activity_logs table.
+student_topic_performance,performance_id,UUID,False,PRIMARY KEY,Performance id value used by the student_topic_performance table.
+student_topic_performance,student_id,UUID,False,FOREIGN KEY -> students.student_id,Pseudonymous identifier of the student.
+student_topic_performance,course_id,UUID,False,FOREIGN KEY -> courses.course_id,Identifier of the course in the institutional catalog.
+student_topic_performance,topic_id,UUID,False,FOREIGN KEY -> course_topics.topic_id,Course topic associated with the record.
+student_topic_performance,practice_attempts,INTEGER,False,,Number of practice attempts recorded for the student-topic pair.
+student_topic_performance,correct_attempts,INTEGER,False,,Number of correct practice attempts.
+student_topic_performance,accuracy_percentage,DECIMAL,True,,"Correct attempts divided by practice attempts, multiplied by 100; NULL when no attempts."
+student_topic_performance,average_response_time,DECIMAL,True,,Average response time in seconds for the topic practice attempts.
+student_topic_performance,last_practiced_at,TIMESTAMP,True,,Last practiced at value used by the student_topic_performance table.
+student_academic_outcomes,outcome_id,UUID,False,PRIMARY KEY,Outcome id value used by the student_academic_outcomes table.
+student_academic_outcomes,student_id,UUID,False,FOREIGN KEY -> students.student_id,Pseudonymous identifier of the student.
+student_academic_outcomes,course_id,UUID,False,FOREIGN KEY -> courses.course_id,Identifier of the course in the institutional catalog.
+student_academic_outcomes,term_id,UUID,False,FOREIGN KEY -> academic_terms.term_id,Academic term associated with the record.
+student_academic_outcomes,successful_completion,BOOLEAN,False,,"Supervised binary label; True means passed, False means failed or withdrawn."
+student_academic_outcomes,final_grade,VARCHAR,False,,Letter grade derived from final percentage.
+student_academic_outcomes,final_percentage,DECIMAL,False,,"Final synthetic course percentage, from 0 to 100."
+student_academic_outcomes,outcome_date,DATE,True,,Outcome date value used by the student_academic_outcomes table.
+learning_resources,resource_id,UUID,False,PRIMARY KEY,Identifier of the learning resource associated with the record.
+learning_resources,course_id,UUID,False,FOREIGN KEY -> courses.course_id,Identifier of the course in the institutional catalog.
+learning_resources,topic_id,UUID,False,FOREIGN KEY -> course_topics.topic_id,Course topic associated with the record.
+learning_resources,resource_title,VARCHAR,False,,Resource title value used by the learning_resources table.
+learning_resources,resource_type,VARCHAR,False,,Resource type value used by the learning_resources table.
+learning_resources,difficulty_level,VARCHAR,False,,Difficulty level value used by the learning_resources table.
+learning_resources,resource_url,TEXT,True,,Fictional placeholder URL; not intended to resolve to a real resource.
+learning_resources,learning_objective,TEXT,False,,Learning outcome the resource is intended to support.
+student_resource_interactions,interaction_id,UUID,False,PRIMARY KEY,Interaction id value used by the student_resource_interactions table.
+student_resource_interactions,student_id,UUID,False,FOREIGN KEY -> students.student_id,Pseudonymous identifier of the student.
+student_resource_interactions,resource_id,UUID,False,FOREIGN KEY -> learning_resources.resource_id,Identifier of the learning resource associated with the record.
+student_resource_interactions,interaction_date,TIMESTAMP,False,,Interaction date value used by the student_resource_interactions table.
+student_resource_interactions,time_spent_seconds,INTEGER,False,,"Time spent on the associated learning activity or resource, in seconds."
+student_resource_interactions,completion_percentage,DECIMAL,False,,"Percentage of the learning resource completed, from 0 to 100."
+student_resource_interactions,feedback_rating,INTEGER,True,,Optional student feedback rating from 1 to 5.
+federated_clients,client_id,UUID,False,PRIMARY KEY,Identifier of the institution's local federated client.
+federated_clients,institution_id,UUID,False,FOREIGN KEY -> institutions.institution_id,Identifier of the institution owning the record.
+federated_clients,client_name,VARCHAR,False,,Client name value used by the federated_clients table.
+federated_clients,client_status,VARCHAR,False,,Client status value used by the federated_clients table.
+federated_clients,registered_at,TIMESTAMP,False,,Registered at value used by the federated_clients table.
+federated_training_rounds,round_id,UUID,False,PRIMARY KEY,Identifier of the shared federated training round.
+federated_training_rounds,global_model_version,VARCHAR,False,,Version label for the global model in this round.
+federated_training_rounds,started_at,TIMESTAMP,False,,Started at value used by the federated_training_rounds table.
+federated_training_rounds,completed_at,TIMESTAMP,True,,Completed at value used by the federated_training_rounds table.
+federated_training_rounds,aggregation_method,VARCHAR,False,,Federated aggregation algorithm; FedAvg is used in this synthetic run.
+federated_training_rounds,round_status,VARCHAR,False,,Round status value used by the federated_training_rounds table.
+federated_client_updates,update_id,UUID,False,PRIMARY KEY,Update id value used by the federated_client_updates table.
+federated_client_updates,round_id,UUID,False,FOREIGN KEY -> federated_training_rounds.round_id,Identifier of the shared federated training round.
+federated_client_updates,client_id,UUID,False,FOREIGN KEY -> federated_clients.client_id,Identifier of the institution's local federated client.
+federated_client_updates,model_version,VARCHAR,False,,Version label for the institution's local model update.
+federated_client_updates,sample_count,INTEGER,False,,Number of local training examples represented by the client update.
+federated_client_updates,update_status,VARCHAR,False,,Update status value used by the federated_client_updates table.
+federated_client_updates,submitted_at,TIMESTAMP,False,,Submitted at value used by the federated_client_updates table.
+personalized_recommendations,recommendation_id,UUID,False,PRIMARY KEY,Recommendation id value used by the personalized_recommendations table.
+personalized_recommendations,student_id,UUID,False,FOREIGN KEY -> students.student_id,Pseudonymous identifier of the student.
+personalized_recommendations,course_id,UUID,False,FOREIGN KEY -> courses.course_id,Identifier of the course in the institutional catalog.
+personalized_recommendations,recommendation_type,VARCHAR,False,,Recommendation type value used by the personalized_recommendations table.
+personalized_recommendations,topic_id,UUID,True,FOREIGN KEY -> course_topics.topic_id,Course topic associated with the record.
+personalized_recommendations,resource_id,UUID,True,FOREIGN KEY -> learning_resources.resource_id,Identifier of the learning resource associated with the record.
+personalized_recommendations,prediction_score,DECIMAL,False,,"Synthetic recommendation ranking/confidence score, from 0 to 1."
+personalized_recommendations,recommendation_text,TEXT,False,,Human-readable explanation of the suggested learning action.
+personalized_recommendations,generated_at,TIMESTAMP,False,,Generated at value used by the personalized_recommendations table.

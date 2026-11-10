@@ -1,0 +1,97 @@
+institution,metric,value
+Synthetic University of Technology,students,500.0
+Synthetic University of Technology,courses,12.0
+Synthetic University of Technology,course_enrollments,12403.0
+Synthetic University of Technology,course_completion_rate,0.5068
+Synthetic University of Technology,course_failure_or_withdrawal_rate,0.4932
+Synthetic University of Technology,withdrawal_rate,0.0547
+Synthetic University of Technology,average_assessment_percentage,50.822
+Synthetic University of Technology,average_attendance,83.56
+Synthetic University of Technology,average_topic_accuracy,59.088
+Synthetic University of Technology,average_session_duration_minutes,47.099
+Synthetic University of Technology,resource_interaction_completion_rate,0.0283
+Synthetic University of Technology,row_count:institutions,1.0
+Synthetic University of Technology,row_count:departments,4.0
+Synthetic University of Technology,row_count:programs,3.0
+Synthetic University of Technology,row_count:academic_terms,6.0
+Synthetic University of Technology,row_count:students,500.0
+Synthetic University of Technology,row_count:student_enrollments,12403.0
+Synthetic University of Technology,row_count:courses,12.0
+Synthetic University of Technology,row_count:course_topics,74.0
+Synthetic University of Technology,row_count:assessments,360.0
+Synthetic University of Technology,row_count:student_assessment_results,61358.0
+Synthetic University of Technology,row_count:student_course_history,12014.0
+Synthetic University of Technology,row_count:learning_sessions,36466.0
+Synthetic University of Technology,row_count:learning_activity_logs,54710.0
+Synthetic University of Technology,row_count:student_topic_performance,64724.0
+Synthetic University of Technology,row_count:student_academic_outcomes,12014.0
+Synthetic University of Technology,row_count:learning_resources,84.0
+Synthetic University of Technology,row_count:student_resource_interactions,34647.0
+Synthetic University of Technology,row_count:federated_clients,1.0
+Synthetic University of Technology,row_count:federated_training_rounds,5.0
+Synthetic University of Technology,row_count:federated_client_updates,5.0
+Synthetic University of Technology,row_count:personalized_recommendations,1767.0
+Synthetic National University,students,500.0
+Synthetic National University,courses,12.0
+Synthetic National University,course_enrollments,12576.0
+Synthetic National University,course_completion_rate,0.4374
+Synthetic National University,course_failure_or_withdrawal_rate,0.5626
+Synthetic National University,withdrawal_rate,0.0555
+Synthetic National University,average_assessment_percentage,47.681
+Synthetic National University,average_attendance,76.999
+Synthetic National University,average_topic_accuracy,59.89
+Synthetic National University,average_session_duration_minutes,47.131
+Synthetic National University,resource_interaction_completion_rate,0.0314
+Synthetic National University,row_count:institutions,1.0
+Synthetic National University,row_count:departments,4.0
+Synthetic National University,row_count:programs,3.0
+Synthetic National University,row_count:academic_terms,6.0
+Synthetic National University,row_count:students,500.0
+Synthetic National University,row_count:student_enrollments,12576.0
+Synthetic National University,row_count:courses,12.0
+Synthetic National University,row_count:course_topics,74.0
+Synthetic National University,row_count:assessments,360.0
+Synthetic National University,row_count:student_assessment_results,62204.0
+Synthetic National University,row_count:student_course_history,12178.0
+Synthetic National University,row_count:learning_sessions,38022.0
+Synthetic National University,row_count:learning_activity_logs,56967.0
+Synthetic National University,row_count:student_topic_performance,64663.0
+Synthetic National University,row_count:student_academic_outcomes,12178.0
+Synthetic National University,row_count:learning_resources,84.0
+Synthetic National University,row_count:student_resource_interactions,35732.0
+Synthetic National University,row_count:federated_clients,1.0
+Synthetic National University,row_count:federated_training_rounds,5.0
+Synthetic National University,row_count:federated_client_updates,5.0
+Synthetic National University,row_count:personalized_recommendations,1760.0
+Synthetic Institute of Higher Education,students,500.0
+Synthetic Institute of Higher Education,courses,12.0
+Synthetic Institute of Higher Education,course_enrollments,12579.0
+Synthetic Institute of Higher Education,course_completion_rate,0.426
+Synthetic Institute of Higher Education,course_failure_or_withdrawal_rate,0.574
+Synthetic Institute of Higher Education,withdrawal_rate,0.0816
+Synthetic Institute of Higher Education,average_assessment_percentage,47.396
+Synthetic Institute of Higher Education,average_attendance,69.499
+Synthetic Institute of Higher Education,average_topic_accuracy,60.464
+Synthetic Institute of Higher Education,average_session_duration_minutes,47.118
+Synthetic Institute of Higher Education,resource_interaction_completion_rate,0.0303
+Synthetic Institute of Higher Education,row_count:institutions,1.0
+Synthetic Institute of Higher Education,row_count:departments,4.0
+Synthetic Institute of Higher Education,row_count:programs,3.0
+Synthetic Institute of Higher Education,row_count:academic_terms,6.0
+Synthetic Institute of Higher Education,row_count:students,500.0
+Synthetic Institute of Higher Education,row_count:student_enrollments,12579.0
+Synthetic Institute of Higher Education,row_count:courses,12.0
+Synthetic Institute of Higher Education,row_count:course_topics,74.0
+Synthetic Institute of Higher Education,row_count:assessments,360.0
+Synthetic Institute of Higher Education,row_count:student_assessment_results,61899.0
+Synthetic Institute of Higher Education,row_count:student_course_history,12210.0
+Synthetic Institute of Higher Education,row_count:learning_sessions,37488.0
+Synthetic Institute of Higher Education,row_count:learning_activity_logs,56394.0
+Synthetic Institute of Higher Education,row_count:student_topic_performance,65008.0
+Synthetic Institute of Higher Education,row_count:student_academic_outcomes,12210.0
+Synthetic Institute of Higher Education,row_count:learning_resources,84.0
+Synthetic Institute of Higher Education,row_count:student_resource_interactions,35700.0
+Synthetic Institute of Higher Education,row_count:federated_clients,1.0
+Synthetic Institute of Higher Education,row_count:federated_training_rounds,5.0
+Synthetic Institute of Higher Education,row_count:federated_client_updates,5.0
+Synthetic Institute of Higher Education,row_count:personalized_recommendations,1770.0

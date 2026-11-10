@@ -1,0 +1,75 @@
+topic_id,course_id,parent_topic_id,topic_name,topic_description,sequence_number
+01bce4bb-6ee5-4df3-ad7e-c5eb07c5d6d8,78201562-07d5-45cc-af8b-cbd278cef605,,Programming Fundamentals Foundations,Foundational concepts in Programming Fundamentals.,1
+02550355-ebc2-4549-91f2-4450c6c7ce85,78201562-07d5-45cc-af8b-cbd278cef605,01bce4bb-6ee5-4df3-ad7e-c5eb07c5d6d8,Variables,Study and apply variables in Programming Fundamentals.,2
+39cdb338-19a0-41aa-ae0c-e26db303cf6c,78201562-07d5-45cc-af8b-cbd278cef605,01bce4bb-6ee5-4df3-ad7e-c5eb07c5d6d8,Data Types,Study and apply data types in Programming Fundamentals.,3
+f9b6c8fd-4d41-402e-aa82-644e2d8db557,78201562-07d5-45cc-af8b-cbd278cef605,01bce4bb-6ee5-4df3-ad7e-c5eb07c5d6d8,Conditionals,Study and apply conditionals in Programming Fundamentals.,4
+8f0b5b02-20bd-4377-aba3-194d3752df6c,78201562-07d5-45cc-af8b-cbd278cef605,01bce4bb-6ee5-4df3-ad7e-c5eb07c5d6d8,Loops,Study and apply loops in Programming Fundamentals.,5
+4cbc045c-4381-4147-a066-e54ef7fdcab6,78201562-07d5-45cc-af8b-cbd278cef605,01bce4bb-6ee5-4df3-ad7e-c5eb07c5d6d8,Functions,Study and apply functions in Programming Fundamentals.,6
+c46d702c-a448-47d6-a192-3d5c8ad6564b,78201562-07d5-45cc-af8b-cbd278cef605,01bce4bb-6ee5-4df3-ad7e-c5eb07c5d6d8,Arrays,Study and apply arrays in Programming Fundamentals.,7
+c6011359-d483-462a-93ff-e2d8e1a91f3d,e9af57dc-6846-46cf-94e9-ac7fd1888a3e,,Data Structures Foundations,Foundational concepts in Data Structures.,1
+73118fc3-bd96-4f97-8acf-7c7b0fd95eed,e9af57dc-6846-46cf-94e9-ac7fd1888a3e,c6011359-d483-462a-93ff-e2d8e1a91f3d,Arrays,Study and apply arrays in Data Structures.,2
+fdd8ae62-b960-48ea-a757-844debe8d8b9,e9af57dc-6846-46cf-94e9-ac7fd1888a3e,c6011359-d483-462a-93ff-e2d8e1a91f3d,Linked Lists,Study and apply linked lists in Data Structures.,3
+90c7060f-57ae-4dc4-902c-bd2d5bfb2159,e9af57dc-6846-46cf-94e9-ac7fd1888a3e,c6011359-d483-462a-93ff-e2d8e1a91f3d,Stacks,Study and apply stacks in Data Structures.,4
+0a598afa-0393-4f55-97d3-497f62131cdc,e9af57dc-6846-46cf-94e9-ac7fd1888a3e,c6011359-d483-462a-93ff-e2d8e1a91f3d,Queues,Study and apply queues in Data Structures.,5
+f2edc515-ed28-4330-b2ba-df554710997b,e9af57dc-6846-46cf-94e9-ac7fd1888a3e,c6011359-d483-462a-93ff-e2d8e1a91f3d,Trees,Study and apply trees in Data Structures.,6
+b315e07a-4998-4d4b-b356-19b0427a5f7b,e9af57dc-6846-46cf-94e9-ac7fd1888a3e,c6011359-d483-462a-93ff-e2d8e1a91f3d,Graphs,Study and apply graphs in Data Structures.,7
+51bfe0d4-90b5-475e-b6cd-1321bf87195c,2caee4ee-b355-42ae-9f23-c6b66f4012f5,,Database Systems Foundations,Foundational concepts in Database Systems.,1
+19ee92a8-a7c8-42d3-bedf-53c95d065f09,2caee4ee-b355-42ae-9f23-c6b66f4012f5,51bfe0d4-90b5-475e-b6cd-1321bf87195c,Relational Models,Study and apply relational models in Database Systems.,2
+2a804e25-ccf9-42c0-87c9-a4b5ebd450e5,2caee4ee-b355-42ae-9f23-c6b66f4012f5,51bfe0d4-90b5-475e-b6cd-1321bf87195c,SQL,Study and apply sql in Database Systems.,3
+2c89da0d-32dc-4340-b1f0-0cc69a023715,2caee4ee-b355-42ae-9f23-c6b66f4012f5,51bfe0d4-90b5-475e-b6cd-1321bf87195c,Normalization,Study and apply normalization in Database Systems.,4
+cff21e9c-8b0a-4b80-8c92-f9bf1dad604f,2caee4ee-b355-42ae-9f23-c6b66f4012f5,51bfe0d4-90b5-475e-b6cd-1321bf87195c,Transactions,Study and apply transactions in Database Systems.,5
+ecd33838-7ffe-477f-9c3c-b729f6b9c179,2caee4ee-b355-42ae-9f23-c6b66f4012f5,51bfe0d4-90b5-475e-b6cd-1321bf87195c,Indexing,Study and apply indexing in Database Systems.,6
+bf7e03a4-2578-4153-b497-1fd2467d4e5f,a996c514-137b-4e4a-bd0d-01057a644cfa,,Machine Learning Foundations,Foundational concepts in Machine Learning.,1
+6f9be184-0e06-4e03-890d-162beb4ec554,a996c514-137b-4e4a-bd0d-01057a644cfa,bf7e03a4-2578-4153-b497-1fd2467d4e5f,Regression,Study and apply regression in Machine Learning.,2
+f3201392-0ae7-4235-a104-dacfd237d225,a996c514-137b-4e4a-bd0d-01057a644cfa,bf7e03a4-2578-4153-b497-1fd2467d4e5f,Classification,Study and apply classification in Machine Learning.,3
+c639a652-18e2-4a52-ae7e-3828ee82c37e,a996c514-137b-4e4a-bd0d-01057a644cfa,bf7e03a4-2578-4153-b497-1fd2467d4e5f,Model Evaluation,Study and apply model evaluation in Machine Learning.,4
+0706b11f-5a51-45f4-8d98-97c894792359,a996c514-137b-4e4a-bd0d-01057a644cfa,bf7e03a4-2578-4153-b497-1fd2467d4e5f,Neural Networks,Study and apply neural networks in Machine Learning.,5
+798b20ab-a2a3-47c5-a8c3-dae3412f5e8c,a996c514-137b-4e4a-bd0d-01057a644cfa,bf7e03a4-2578-4153-b497-1fd2467d4e5f,Clustering,Study and apply clustering in Machine Learning.,6
+2a5d44a3-9bf0-4fec-b620-b71af4be551a,f6bd02eb-d18a-4782-9022-dfbdeaef45fc,,Circuit Fundamentals Foundations,Foundational concepts in Circuit Fundamentals.,1
+5656b753-955f-4f36-8ecb-6b937fbc2303,f6bd02eb-d18a-4782-9022-dfbdeaef45fc,2a5d44a3-9bf0-4fec-b620-b71af4be551a,Voltage,Study and apply voltage in Circuit Fundamentals.,2
+2e7843d3-ec7b-434e-bf3d-4cce3960ea08,f6bd02eb-d18a-4782-9022-dfbdeaef45fc,2a5d44a3-9bf0-4fec-b620-b71af4be551a,Current,Study and apply current in Circuit Fundamentals.,3
+5d4ed2a4-c224-41fc-a37f-79875b8f8887,f6bd02eb-d18a-4782-9022-dfbdeaef45fc,2a5d44a3-9bf0-4fec-b620-b71af4be551a,Resistance,Study and apply resistance in Circuit Fundamentals.,4
+143240d9-ef41-474e-a7f9-815102eb43fa,f6bd02eb-d18a-4782-9022-dfbdeaef45fc,2a5d44a3-9bf0-4fec-b620-b71af4be551a,Circuit Laws,Study and apply circuit laws in Circuit Fundamentals.,5
+33cd9d23-f214-4897-90c0-70fca640f004,f6bd02eb-d18a-4782-9022-dfbdeaef45fc,2a5d44a3-9bf0-4fec-b620-b71af4be551a,Network Analysis,Study and apply network analysis in Circuit Fundamentals.,6
+9b33d283-4d07-46e6-8560-d1ed149e5782,65c55853-6b98-4bd0-b258-fffe5af3e284,,Digital Systems Foundations,Foundational concepts in Digital Systems.,1
+e600262a-a15d-4328-9e8c-ab7ce125e793,65c55853-6b98-4bd0-b258-fffe5af3e284,9b33d283-4d07-46e6-8560-d1ed149e5782,Number Systems,Study and apply number systems in Digital Systems.,2
+860b4080-0cd2-4eac-a406-c4f490a32704,65c55853-6b98-4bd0-b258-fffe5af3e284,9b33d283-4d07-46e6-8560-d1ed149e5782,Logic Gates,Study and apply logic gates in Digital Systems.,3
+319a2dc7-6898-41b8-ab55-0a0d25cedfd1,65c55853-6b98-4bd0-b258-fffe5af3e284,9b33d283-4d07-46e6-8560-d1ed149e5782,Boolean Algebra,Study and apply boolean algebra in Digital Systems.,4
+cf400057-f96a-4d97-91aa-51b41b0821cb,65c55853-6b98-4bd0-b258-fffe5af3e284,9b33d283-4d07-46e6-8560-d1ed149e5782,Combinational Logic,Study and apply combinational logic in Digital Systems.,5
+f042df42-4c4d-450e-a224-512efd01b777,65c55853-6b98-4bd0-b258-fffe5af3e284,9b33d283-4d07-46e6-8560-d1ed149e5782,Sequential Logic,Study and apply sequential logic in Digital Systems.,6
+5e8a8a35-48c0-4e60-a285-2e46e72e8513,6f9add41-44f1-4e07-a7ef-603931cf4791,,Calculus Foundations,Foundational concepts in Calculus.,1
+786181a0-285d-4f10-bf38-abfea4e34672,6f9add41-44f1-4e07-a7ef-603931cf4791,5e8a8a35-48c0-4e60-a285-2e46e72e8513,Limits,Study and apply limits in Calculus.,2
+b3453251-afd2-4b21-a797-c82da60fafc4,6f9add41-44f1-4e07-a7ef-603931cf4791,5e8a8a35-48c0-4e60-a285-2e46e72e8513,Differentiation,Study and apply differentiation in Calculus.,3
+ac1cd21b-cdb8-4821-8ce9-a847043bdb85,6f9add41-44f1-4e07-a7ef-603931cf4791,5e8a8a35-48c0-4e60-a285-2e46e72e8513,Integration,Study and apply integration in Calculus.,4
+3f941362-fec9-4bcd-998b-d05980da16cd,6f9add41-44f1-4e07-a7ef-603931cf4791,5e8a8a35-48c0-4e60-a285-2e46e72e8513,Applications,Study and apply applications in Calculus.,5
+f95f663b-6063-4386-b54f-ead5a9cf8bfb,6f9add41-44f1-4e07-a7ef-603931cf4791,5e8a8a35-48c0-4e60-a285-2e46e72e8513,Series,Study and apply series in Calculus.,6
+3d2342bc-ddd9-4e94-a711-281dc17e1b56,9e94810a-97be-4ed0-b412-d6dc5d43f99a,,Linear Algebra Foundations,Foundational concepts in Linear Algebra.,1
+f66831c6-5dda-42c7-b6ec-4ea3e3cc2db3,9e94810a-97be-4ed0-b412-d6dc5d43f99a,3d2342bc-ddd9-4e94-a711-281dc17e1b56,Vectors,Study and apply vectors in Linear Algebra.,2
+7d15196e-47b2-46f4-bcbe-b32d9e764426,9e94810a-97be-4ed0-b412-d6dc5d43f99a,3d2342bc-ddd9-4e94-a711-281dc17e1b56,Matrices,Study and apply matrices in Linear Algebra.,3
+cc535ce6-4802-40b2-b65a-fc5fc74b6400,9e94810a-97be-4ed0-b412-d6dc5d43f99a,3d2342bc-ddd9-4e94-a711-281dc17e1b56,Determinants,Study and apply determinants in Linear Algebra.,4
+e66f9f67-3201-487a-87c6-7bcbc3a8b544,9e94810a-97be-4ed0-b412-d6dc5d43f99a,3d2342bc-ddd9-4e94-a711-281dc17e1b56,Eigenvalues,Study and apply eigenvalues in Linear Algebra.,5
+04bbaf0e-522d-4027-affb-7540579f2480,9e94810a-97be-4ed0-b412-d6dc5d43f99a,3d2342bc-ddd9-4e94-a711-281dc17e1b56,Linear Transformations,Study and apply linear transformations in Linear Algebra.,6
+aa47dfca-be50-4fd3-a8aa-70f1c1b40b65,e1ec8367-9663-4610-82b6-f4b630255e80,,Physics for Computing Foundations,Foundational concepts in Physics for Computing.,1
+5ab5b21f-4263-4e3d-95a7-abf611486f32,e1ec8367-9663-4610-82b6-f4b630255e80,aa47dfca-be50-4fd3-a8aa-70f1c1b40b65,Motion,Study and apply motion in Physics for Computing.,2
+d768e8c0-adf6-47ed-b864-2e5f5a538950,e1ec8367-9663-4610-82b6-f4b630255e80,aa47dfca-be50-4fd3-a8aa-70f1c1b40b65,Energy,Study and apply energy in Physics for Computing.,3
+6b0a2eeb-cf23-4c74-90d4-0b47dfeb1877,e1ec8367-9663-4610-82b6-f4b630255e80,aa47dfca-be50-4fd3-a8aa-70f1c1b40b65,Waves,Study and apply waves in Physics for Computing.,4
+a025db7d-36f3-4e30-a34b-c408840f8d7c,e1ec8367-9663-4610-82b6-f4b630255e80,aa47dfca-be50-4fd3-a8aa-70f1c1b40b65,Electricity,Study and apply electricity in Physics for Computing.,5
+93cbd5ee-5e09-4726-b8a2-fe343f86879b,e1ec8367-9663-4610-82b6-f4b630255e80,aa47dfca-be50-4fd3-a8aa-70f1c1b40b65,Optics,Study and apply optics in Physics for Computing.,6
+9ff8ab31-eaac-42fd-bde4-ede8255ad532,17c0d767-39e9-4054-9e70-2246cbd9f1a8,,Applied Statistics Foundations,Foundational concepts in Applied Statistics.,1
+a0d75e33-b989-4e0c-916b-5326cdca291c,17c0d767-39e9-4054-9e70-2246cbd9f1a8,9ff8ab31-eaac-42fd-bde4-ede8255ad532,Descriptive Statistics,Study and apply descriptive statistics in Applied Statistics.,2
+117953f0-c8f5-4586-bfb4-b58ba55e9126,17c0d767-39e9-4054-9e70-2246cbd9f1a8,9ff8ab31-eaac-42fd-bde4-ede8255ad532,Probability,Study and apply probability in Applied Statistics.,3
+96849c7f-9968-4104-9e10-5b0871539e1c,17c0d767-39e9-4054-9e70-2246cbd9f1a8,9ff8ab31-eaac-42fd-bde4-ede8255ad532,Distributions,Study and apply distributions in Applied Statistics.,4
+336a51b3-e99b-4193-9289-34e88564f9b7,17c0d767-39e9-4054-9e70-2246cbd9f1a8,9ff8ab31-eaac-42fd-bde4-ede8255ad532,Hypothesis Testing,Study and apply hypothesis testing in Applied Statistics.,5
+05aa97b2-a1c6-4668-a6c2-e6f6155f7611,17c0d767-39e9-4054-9e70-2246cbd9f1a8,9ff8ab31-eaac-42fd-bde4-ede8255ad532,Correlation,Study and apply correlation in Applied Statistics.,6
+5cc47c7e-f770-440a-a0b9-2b5536eb2d45,d28e7168-2a0c-401c-9d4b-3c5366da0a48,,Principles of Management Foundations,Foundational concepts in Principles of Management.,1
+afeb765d-9117-43b2-922d-4d738c97fadd,d28e7168-2a0c-401c-9d4b-3c5366da0a48,5cc47c7e-f770-440a-a0b9-2b5536eb2d45,Management Functions,Study and apply management functions in Principles of Management.,2
+d3b12c99-ac24-4024-8611-2377f916b286,d28e7168-2a0c-401c-9d4b-3c5366da0a48,5cc47c7e-f770-440a-a0b9-2b5536eb2d45,Planning,Study and apply planning in Principles of Management.,3
+d2ebaeb2-e7bc-41bf-8a6d-63eda9375e0d,d28e7168-2a0c-401c-9d4b-3c5366da0a48,5cc47c7e-f770-440a-a0b9-2b5536eb2d45,Organizing,Study and apply organizing in Principles of Management.,4
+97885892-29a5-4ac2-a2d6-41fedc6f2de0,d28e7168-2a0c-401c-9d4b-3c5366da0a48,5cc47c7e-f770-440a-a0b9-2b5536eb2d45,Leadership,Study and apply leadership in Principles of Management.,5
+38b8397b-d11a-4f08-8b3c-d12bbfbd85c7,d28e7168-2a0c-401c-9d4b-3c5366da0a48,5cc47c7e-f770-440a-a0b9-2b5536eb2d45,Control,Study and apply control in Principles of Management.,6
+8ff00280-04cc-4c6d-b8ed-77e7369bf868,72c63871-dd36-45d7-baab-538d703378e5,,Business Communication Foundations,Foundational concepts in Business Communication.,1
+21eb8f84-9d7f-48df-a7e2-682c6a0d510b,72c63871-dd36-45d7-baab-538d703378e5,8ff00280-04cc-4c6d-b8ed-77e7369bf868,Written Communication,Study and apply written communication in Business Communication.,2
+b6a1701a-d0a5-4e96-9f06-f49b823365c9,72c63871-dd36-45d7-baab-538d703378e5,8ff00280-04cc-4c6d-b8ed-77e7369bf868,Presentations,Study and apply presentations in Business Communication.,3
+149a3c9b-44fe-4e76-82db-ad3f389171c7,72c63871-dd36-45d7-baab-538d703378e5,8ff00280-04cc-4c6d-b8ed-77e7369bf868,Listening,Study and apply listening in Business Communication.,4
+aa4e6d0f-a521-445c-ba26-5fa90f8e4b96,72c63871-dd36-45d7-baab-538d703378e5,8ff00280-04cc-4c6d-b8ed-77e7369bf868,Team Communication,Study and apply team communication in Business Communication.,5
+8eae82c3-c194-49ab-866c-530bab434070,72c63871-dd36-45d7-baab-538d703378e5,8ff00280-04cc-4c6d-b8ed-77e7369bf868,Reports,Study and apply reports in Business Communication.,6

@@ -1,0 +1,13 @@
+course_id,institution_id,department_id,course_code,course_name,subject_area,credit_hours,difficulty_level
+887231fd-ee71-4bfb-883f-a7b3853c2f70,9640f327-782d-4ce1-bbb2-2e5fc8eb0fee,1eb31f1d-0a42-458e-baec-8b62a878daea,B-CS101,Programming Fundamentals,Programming,4.0,Beginner
+970b9810-7ccb-494a-9488-cae6bd3c827b,9640f327-782d-4ce1-bbb2-2e5fc8eb0fee,1eb31f1d-0a42-458e-baec-8b62a878daea,B-CS201,Data Structures,Programming,4.0,Intermediate
+c252f39d-ffc2-44ba-a3c0-008a557c24da,9640f327-782d-4ce1-bbb2-2e5fc8eb0fee,1eb31f1d-0a42-458e-baec-8b62a878daea,B-CS301,Database Systems,Data Science,3.0,Intermediate
+f0e28e1f-60c0-458c-906f-017d8a569c51,9640f327-782d-4ce1-bbb2-2e5fc8eb0fee,1eb31f1d-0a42-458e-baec-8b62a878daea,B-CS401,Machine Learning,Data Science,4.0,Advanced
+7eba3bd1-3f7a-4c46-ac9a-941994733234,9640f327-782d-4ce1-bbb2-2e5fc8eb0fee,0cb742c9-1a72-46f1-bfef-21d411020a1a,B-EE101,Circuit Fundamentals,Engineering,3.0,Beginner
+1f2eb5f1-3d71-407d-be33-c883e3f36051,9640f327-782d-4ce1-bbb2-2e5fc8eb0fee,0cb742c9-1a72-46f1-bfef-21d411020a1a,B-EE201,Digital Systems,Engineering,3.0,Intermediate
+5720fd38-8334-49d5-abb0-16fafe83c4d2,9640f327-782d-4ce1-bbb2-2e5fc8eb0fee,0ab828c4-af80-4b3b-a47a-e1763856cf76,B-MA101,Calculus,Mathematics,4.0,Intermediate
+f5e3bdcb-442b-4439-a5d9-ece448593a5e,9640f327-782d-4ce1-bbb2-2e5fc8eb0fee,0ab828c4-af80-4b3b-a47a-e1763856cf76,B-MA201,Linear Algebra,Mathematics,3.0,Intermediate
+39c92c18-4a29-46e5-9b25-3c68a30a2f67,9640f327-782d-4ce1-bbb2-2e5fc8eb0fee,0ab828c4-af80-4b3b-a47a-e1763856cf76,B-SC101,Physics for Computing,Physics,3.0,Beginner
+abf7b91e-2ebf-4d66-85c5-962e549b29bb,9640f327-782d-4ce1-bbb2-2e5fc8eb0fee,0ab828c4-af80-4b3b-a47a-e1763856cf76,B-SC201,Applied Statistics,Statistics,3.0,Intermediate
+a059cbb8-f4c7-4968-b01a-f71e0b2d8fe5,9640f327-782d-4ce1-bbb2-2e5fc8eb0fee,9fc136f9-5a18-4ab3-970d-afcb7a7c4bbc,B-BU101,Principles of Management,Business,3.0,Beginner
+2ff8cc0a-e2b9-42d3-8e8c-f848641d5839,9640f327-782d-4ce1-bbb2-2e5fc8eb0fee,9fc136f9-5a18-4ab3-970d-afcb7a7c4bbc,B-BU201,Business Communication,Communication,2.0,Beginner
